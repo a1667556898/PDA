@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="orange">#FCC800</color>
+    <color name="orangeAlph">#CCFCC800</color>
+    <color name="titleColor">#000000</color>
+    <color name="textColor">#333333</color>
+    <color name="textColor2">#666666</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightGray">#F0F0F0</color>
+    <color name="translate">#80FFFFFF</color>
+</resources>

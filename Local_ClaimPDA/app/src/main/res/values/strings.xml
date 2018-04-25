@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">PDA-索赔</string>
+    <string name="home">首页</string>
+    <string name="house_sign">仓库签收</string>
+    <string name="oldparts_exit">旧件出库</string>
+    <string name="oldparts_enter">旧件入库</string>
+    <string name="confirm_info">确认信息</string>
+    <string name="after_sale_code">售后服务商代码</string>
+    <string name="after_sale_name">售后服务商名称</string>
+    <string name="vin">VIN</string>
+    <string name="engine_no">发动机号</string>
+    <string name="return_weekly">回运周次</string>
+    <string name="claim_seats">索赔单号</string>
+    <string name="claim_type">索赔类型</string>
+    <string name="claim_parts_code">索赔配件代码</string>
+    <string name="claim_parts_name">索赔配件名称</string>
+    <string name="daiding_reason">待定原因</string>
+    <string name="exit">退出</string>
+    <string name="enter">入库</string>
+    <string name="confirm">确认</string>
+    <string name="line_no">行号</string>
+    <string name="scan">扫描配件二维码</string>
+    <string name="tv_scan_parts">扫描配件二维码</string>
+    <string name="cancel">取消</string>
+    <string name="scan_kuwei">扫描库位二维码</string>
+    <string name="claim_parts_num">索赔零件数量</string>
+    <string name="chengyun">承运</string>
+    <string name="back">返回</string>
+    <string name="complain">完成</string>
+    <string name="company_name">安吉加加信息技术有限公司</string>
+    <string name="username_tel">用户名</string>
+    <string name="input_pwd">请输入密码</string>
+    <string name="continue_scan">继续扫描</string>
+    <string name="complete_scan">完成扫描</string>
+    <string name="ruku_type">入库类型</string>
+</resources>

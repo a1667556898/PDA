@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="enter">
+        <item>正常入库</item>
+        <item>二次判定</item>
+    </string-array>
+    <string-array name="reason">
+        <item>回运到库索赔件数量与需回运数据不一致</item>
+        <item>回运到库索赔件与需回运零件不一致</item>
+        <item>回运件为非本批次回运零件</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="result">
+        <item>已通过</item>
+        <item>未通过</item>
+        <item>待判定</item>
+    </string-array>
+</resources>

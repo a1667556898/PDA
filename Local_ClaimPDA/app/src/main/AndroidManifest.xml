@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smcv.xyx.sh.claimpda">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/icon"
+        android:label="${label}"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label,android:allowBackup">
+        <!--开始界面-->
+        <activity android:name=".ui.login.StartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LaunchTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <!-- 确认承运-->
+        <activity
+            android:name=".ui.chengyun.ConfirmChengYunActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 确认出库-->
+        <activity
+            android:name=".ui.chuku.ChuKuConfirmInfoActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 确认二次出库-->
+        <activity
+            android:name=".ui.chuku.ChuKuConfirmSecondActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait" />
+        <!-- 二次判定-->
+        <activity
+            android:name=".ui.ercipanding.ConfirmInfoErCiActivity"
+            android:screenOrientation="portrait" />
+        <!-- 签收信息-->
+        <activity
+            android:name=".ui.housesign.ConfirmQianShouInfoActivity"
+            android:screenOrientation="portrait" />
+        <!-- 确认入库-->
+        <activity
+            android:name=".ui.ruku.ConfirmEnterInfoActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait" />
+        <!--扫描界面 -->
+        <activity
+            android:name=".ui.ScanCodeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait" />
+        <!--确认库位-->
+        <activity android:name=".ui.ruku.ConfirmKuWeiActivity"
+            android:screenOrientation="portrait"/>
+        <!--登录界面-->
+        <activity android:name=".ui.login.LoginActivity1"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

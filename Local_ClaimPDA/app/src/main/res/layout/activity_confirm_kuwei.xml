@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray">
+    <com.smcv.xyx.sh.claimpda.customview.TitleBar
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titleColor"
+        app:textMid="@string/confirm_info"
+        app:imgLeft="@mipmap/ico_back"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/rl_house_name"
+                style="@style/style_rl"
+                android:layout_marginTop="@dimen/dimens_6"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/style_tv_left"
+                    android:text="仓库" />
+
+                <TextView
+                    android:id="@+id/tv_house_name"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+
+            <View style="@style/style_view_line" />
+            <RelativeLayout
+                android:id="@+id/rl_house_code"
+                style="@style/style_rl">
+                <TextView
+                    android:text="库位"
+                    style="@style/style_tv_left" />
+                <TextView
+                    android:id="@+id/tv_house_num"
+                    style="@style/style_tv_right"/>
+            </RelativeLayout>
+            <View style="@style/style_view_line" />
+            <RelativeLayout
+                style="@style/style_rl"
+                android:layout_marginTop="@dimen/dimens_6"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/style_tv_left"
+                    android:text="@string/after_sale_code" />
+
+                <TextView
+                    android:id="@+id/tv_afterSale_code"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+
+            <View style="@style/style_view_line" />
+            <RelativeLayout style="@style/style_rl">
+                <TextView
+                    android:text="@string/after_sale_name"
+                    style="@style/style_tv_left" />
+                <TextView
+                    android:id="@+id/tv_afterSale_name"
+                    style="@style/style_tv_right"/>
+            </RelativeLayout>
+            <View style="@style/style_view_line" />
+
+            <RelativeLayout style="@style/style_rl">
+
+                <TextView
+                    style="@style/style_tv_left"
+                    android:text="@string/vin" />
+
+                <TextView
+                    android:id="@+id/tv_vin_num"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+
+            <View style="@style/style_view_line" />
+            <RelativeLayout style="@style/style_rl">
+                <TextView
+                    android:text="@string/engine_no"
+                    style="@style/style_tv_left" />
+                <TextView
+                    android:id="@+id/tv_engine_no"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+            <View style="@style/style_view_line" />
+            <RelativeLayout style="@style/style_rl">
+                <TextView
+                    android:text="@string/return_weekly"
+                    style="@style/style_tv_left" />
+                <TextView
+                    android:id="@+id/tv_return_weekly"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+            <View style="@style/style_view_line" />
+            <RelativeLayout style="@style/style_rl">
+                <TextView
+                    android:text="@string/line_no"
+                    style="@style/style_tv_left" />
+                <TextView
+                    android:id="@+id/tv_line_no"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+            <View style="@style/style_view_line" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_6"
+                android:background="@color/lightGray"/>
+            <RelativeLayout style="@style/style_rl">
+                <TextView
+                    android:text="@string/claim_seats"
+                    style="@style/style_tv_left" />
+                <TextView
+                    android:id="@+id/tv_claim_num"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+            <View style="@style/style_view_line" />
+            <RelativeLayout style="@style/style_rl">
+                <TextView
+                    android:text="@string/claim_type"
+                    style="@style/style_tv_left" />
+                <TextView
+                    android:id="@+id/tv_claim_type"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+            <View style="@style/style_view_line" />
+            <RelativeLayout style="@style/style_rl">
+                <TextView
+                    android:text="@string/claim_parts_code"
+                    style="@style/style_tv_left" />
+                <TextView
+                    android:id="@+id/tv_parts_code"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+            <View style="@style/style_view_line" />
+            <RelativeLayout style="@style/style_rl">
+                <TextView
+                    android:text="@string/claim_parts_name"
+                    style="@style/style_tv_left" />
+                <TextView
+                    android:id="@+id/tv_parts_name"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+            <View style="@style/style_view_line" />
+            <RelativeLayout style="@style/style_rl">
+                <TextView
+                    android:text="@string/claim_parts_num"
+                    style="@style/style_tv_left" />
+                <TextView
+                    android:id="@+id/tv_parts_num"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+            <View style="@style/style_view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:layout_marginBottom="@dimen/dimens_10">
+                <TextView
+                    android:id="@+id/tv_btn_exit"
+                    android:padding="@dimen/dimens_10"
+                    android:layout_width="@dimen/dimens_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/dimens_20"
+                    android:text="@string/cancel"
+                    android:layout_marginRight="@dimen/dimens_20"
+                    android:textSize="@dimen/dimens_18"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/select_btn_red"/>
+                <TextView
+                    android:id="@+id/tv_btn_confirm"
+                    android:layout_width="@dimen/dimens_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/enter"
+                    android:padding="@dimen/dimens_10"
+                    android:gravity="center"
+                    android:textSize="@dimen/dimens_18"
+                    android:layout_marginRight="@dimen/dimens_20"
+                    android:textColor="@color/white"
+                    android:background="@drawable/select_btn_blue"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

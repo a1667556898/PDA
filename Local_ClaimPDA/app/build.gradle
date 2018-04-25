@@ -1,0 +1,109 @@
+apply plugin: 'com.android.application'
+
+//基础属性定义
+def URL_PRODUCT = '""';
+def URL_ADVANCE = '""';
+def URL_BETA = '"http://10.108.10.63:38060/"';//ceshi
+
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+    defaultConfig {
+        applicationId "com.smcv.xyx.sh.claimpda"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        //生产环境
+        product {
+            applicationId "com.smcv.xyx.sh.claimpda"
+            buildConfigField("String", "BASEURL", URL_PRODUCT)
+            manifestPlaceholders = [
+                    "label"           : "索赔回运"
+            ]
+        }
+        //预发环境
+        advance {
+            applicationId "com.smcv.xyx.sh.claimpda"
+            buildConfigField("String", "BASEURL", URL_ADVANCE)
+            manifestPlaceholders = [
+                    "label"           : "索赔回运"
+            ]
+        }
+        //开发测试环境
+        beta {
+            applicationId "com.smcv.xyx.sh.claimpda"
+            buildConfigField("String", "BASEURL", URL_BETA)
+            manifestPlaceholders = [
+                    "label"           : "索赔回运"
+            ]
+        }
+    }
+
+
+    signingConfigs {
+        relese {
+            //TODO  加载配置文件
+            //加载资源
+//        Properties properties = new Properties()
+//        InputStream inputStream = project.rootProject.file('local.properties').newDataInputStream();
+//        properties.load(inputStream)
+//
+//        //读取文件
+//        def sdkDir = properties.getProperty('key.file')
+//        storeFile file(sdkDir)
+//
+//        //读取字段
+//        def key_keyAlias = properties.getProperty('keyAlias')
+//        def key_keyPassword = properties.getProperty('keyPassword');
+//        def key_storePassword = properties.getProperty('storePassword');
+//
+//        storePassword key_storePassword
+//        keyAlias key_keyAlias
+//        keyPassword key_keyPassword
+        }
+        debug {
+            //TODO
+        }
+    }
+
+}
+
+
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile rootProject.ext.dependencies["appcompat"]
+    compile rootProject.ext.dependencies["constraint-layout"]
+    testCompile rootProject.ext.dependencies["junit"]
+    compile rootProject.ext.dependencies["gson"]
+    compile rootProject.ext.dependencies["eventbus"]
+    compile rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+    compile rootProject.ext.dependencies["glide"]
+    compile rootProject.ext.dependencies["okhttp"]
+    //65535
+    compile rootProject.ext.dependencies["multidex"]
+    compile files('libs/platform_sdk_v2.0.0.jar')
+}

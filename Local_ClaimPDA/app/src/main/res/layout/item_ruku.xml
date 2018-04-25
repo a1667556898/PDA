@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout style="@style/style_rl">
+        <TextView
+            android:text="@string/claim_parts_code"
+            style="@style/style_tv_left" />
+        <TextView
+            android:id="@+id/tv_parts_code"
+            style="@style/style_tv_right" />
+    </RelativeLayout>
+    <View style="@style/style_view_line" />
+    <RelativeLayout style="@style/style_rl">
+        <TextView
+            android:text="@string/claim_parts_name"
+            style="@style/style_tv_left" />
+        <TextView
+            android:id="@+id/tv_parts_name"
+            style="@style/style_tv_right" />
+    </RelativeLayout>
+    <View style="@style/style_view_line" />
+    <RelativeLayout style="@style/style_rl">
+        <TextView
+            android:text="@string/ruku_type"
+            style="@style/style_tv_left" />
+        <TextView
+            android:id="@+id/tv_ruku_type"
+            style="@style/style_tv_right" />
+    </RelativeLayout>
+</LinearLayout>

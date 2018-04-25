@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray"
+    android:orientation="vertical">
+
+    <com.smcv.xyx.sh.claimpda.customview.TitleBar
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titleColor"
+        app:imgLeft="@mipmap/ico_back"
+        app:textLeft="返回"
+        app:textMid="@string/confirm_info" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/style_rl"
+                android:layout_marginTop="@dimen/dimens_6"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/style_tv_left"
+                    android:focusable="true"
+                    android:text="@string/after_sale_code" />
+
+                <TextView
+                    android:id="@+id/tv_afterSale_code"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+
+            <View style="@style/style_view_line" />
+
+            <RelativeLayout style="@style/style_rl">
+
+                <TextView
+                    style="@style/style_tv_left"
+                    android:text="@string/after_sale_name" />
+
+                <TextView
+                    android:id="@+id/tv_afterSale_name"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+
+            <View style="@style/style_view_line" />
+
+            <RelativeLayout style="@style/style_rl">
+
+                <TextView
+                    style="@style/style_tv_left"
+                    android:text="@string/vin" />
+
+                <TextView
+                    android:id="@+id/tv_vin_num"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+
+            <View style="@style/style_view_line" />
+
+            <RelativeLayout style="@style/style_rl">
+
+                <TextView
+                    style="@style/style_tv_left"
+                    android:text="@string/engine_no" />
+
+                <TextView
+                    android:id="@+id/tv_engine_no"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+
+            <View style="@style/style_view_line" />
+
+            <RelativeLayout style="@style/style_rl">
+
+                <TextView
+                    style="@style/style_tv_left"
+                    android:text="@string/return_weekly" />
+
+                <TextView
+                    android:id="@+id/tv_return_weekly"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+
+            <View style="@style/style_view_line" />
+
+            <RelativeLayout style="@style/style_rl">
+
+                <TextView
+                    style="@style/style_tv_left"
+                    android:text="@string/line_no" />
+
+                <TextView
+                    android:id="@+id/tv_line_no"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+
+            <View style="@style/style_view_line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_6"
+                android:background="@color/lightGray" />
+
+            <RelativeLayout style="@style/style_rl">
+
+                <TextView
+                    style="@style/style_tv_left"
+                    android:text="@string/claim_seats" />
+
+                <TextView
+                    android:id="@+id/tv_claim_num"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+
+            <View style="@style/style_view_line" />
+
+            <View style="@style/style_view_line" />
+
+            <RelativeLayout style="@style/style_rl">
+
+                <TextView
+                    style="@style/style_tv_left"
+                    android:text="@string/claim_type" />
+
+                <TextView
+                    android:id="@+id/tv_claim_type"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/style_rl">
+
+                <TextView
+                    style="@style/style_tv_left"
+                    android:text="@string/claim_parts_code" />
+
+                <TextView
+                    android:id="@+id/tv_parts_code"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+
+            <View style="@style/style_view_line" />
+
+            <RelativeLayout style="@style/style_rl">
+
+                <TextView
+                    style="@style/style_tv_left"
+                    android:text="@string/claim_parts_name" />
+
+                <TextView
+                    android:id="@+id/tv_parts_name"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+
+            <View style="@style/style_view_line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_6"
+                android:background="@color/lightGray" />
+
+            <RelativeLayout style="@style/style_rl">
+
+                <TextView
+                    style="@style/style_tv_left"
+                    android:text="索赔零件数量" />
+
+                <TextView
+                    android:id="@+id/tv_parts_num"
+                    style="@style/style_tv_right" />
+            </RelativeLayout>
+
+            <View style="@style/style_view_line" />
+
+            <RelativeLayout
+                style="@style/style_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:minHeight="44dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp">
+
+                <TextView
+                    android:id="@+id/tv_note_left"
+                    style="@style/style_tv_left"
+                    android:text="备注" />
+
+                <EditText
+                    android:id="@+id/et_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_note_left"
+                    android:background="@color/white"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入备注"
+                    android:minHeight="44dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:textSize="@dimen/text_14" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimens_20"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_complete_scan"
+                    style="@style/btnStyle"
+                    android:background="@drawable/select_btn_red"
+                    android:text="完成扫描" />
+
+                <TextView
+                    android:id="@+id/tv_continue_scan"
+                    style="@style/btnStyle"
+                    android:layout_marginLeft="@dimen/dimens_30"
+                    android:background="@drawable/select_btn_blue"
+                    android:text="继续扫描" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

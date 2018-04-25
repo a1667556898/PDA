@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/style_rl">
+
+        <TextView
+            style="@style/style_tv_left"
+            android:text="索赔配件代码" />
+
+        <TextView
+            android:id="@+id/tv_claim_code"
+            style="@style/style_tv_right" />
+    </RelativeLayout>
+
+    <View style="@style/style_view_line" />
+
+    <RelativeLayout style="@style/style_rl">
+
+        <TextView
+            style="@style/style_tv_left"
+            android:text="索赔配件名称" />
+
+        <TextView
+            android:id="@+id/tv_claim_name"
+            style="@style/style_tv_right" />
+    </RelativeLayout>
+
+</LinearLayout>
